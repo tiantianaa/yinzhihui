@@ -20,7 +20,7 @@ class TestSparking(object):
         (32, 5, 30),
         (64, 5, 62)
     ])
-    def test_get_num_of_zero(self, bits_num, key, expected):
+    def testcase(self, bits_num, key, expected):
         assert Sparking.testcase(bits_num, key) == expected
 
 
