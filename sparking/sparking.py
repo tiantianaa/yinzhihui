@@ -3,7 +3,7 @@
 '''
 class Sparking:
     @staticmethod
-    def testpoint(bits_num, key):
+    def testcase(bits_num, key):
         cnt = 0
         while key:
             cnt += 1
@@ -19,7 +19,7 @@ class Sparking:
 
 def main():
     s = Sparking()
-    s.testpoint(32, 5)
+    s.testcase(32, 5)
 
 if __name__ == '__main__':
     main()
