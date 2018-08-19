@@ -15,10 +15,10 @@ class TestSparking(object):
         assert Sparking.get_num_of_one(bits_num, key) == expected
 
     @pytest.mark.parametrize("bits_num, key, expected", [
-        (8, 5, 6),
-        (16, 5, 14),
-        (32, 5, 30),
-        (64, 5, 62)
+        (0, 0, 1),
+        (0, 0, 2),
+        (0, 0, 3),
+        (0, 0, 4)
     ])
     def testcase(self, bits_num, key, expected):
         assert Sparking.testcase(bits_num, key) == expected
