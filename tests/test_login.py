@@ -4,7 +4,7 @@
 import pytest
 from sparking.sparking import Sparking
 
-class TestSparking(object):
+class login(object):
     @pytest.mark.parametrize("bits_num, key, expected", [
         (8, 5, 6),
         (64, 5, 62)
