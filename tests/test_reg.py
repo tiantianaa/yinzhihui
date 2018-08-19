@@ -1,8 +1,7 @@
-from appium import webdriver
+﻿from appium import webdriver
 import time
 import unittest
 from selenium.webdriver.common.by import By
-from scripts.publica.exit_app import *
 
 class Ballnotes(unittest.TestCase):
     '''最新-全部切换'''
