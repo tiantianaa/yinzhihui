@@ -3,6 +3,7 @@ import time
 import unittest
 from selenium.webdriver.common.by import By
 
+
 class Ballnotes(unittest.TestCase):
     '''最新-全部切换'''
     def setUp(self):
