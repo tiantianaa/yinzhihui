@@ -29,6 +29,11 @@ class Ballnotes(unittest.TestCase):
         # driver.find_element(By.XPATH, "//android.widget.RelativeLayout[@resource-id=\"com.caing.news:id/user_center_setting_top_arrows\"]/android.widget.ImageView[1]").click()
         # driver.find_element(By.ID, 'com.caing.news: id / tv_register').click()
 
+    def test_bllnotes(self):
+        driver=self.driver
+        time.sleep(15)
+        driver.find_element(By.ID, 'com.caing.news:id/iv_myself').click()
+
     def tearDown(self):
         exitApp(self)
 if __name__=='__main__':
