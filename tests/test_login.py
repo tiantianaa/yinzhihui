@@ -2,7 +2,6 @@ from appium import webdriver
 import time
 import unittest
 from selenium.webdriver.common.by import By
-from scripts.publica.exit_app import *
 
 class Ballnotes(unittest.TestCase):
     '''最新-全部切换'''
@@ -30,9 +29,6 @@ class Ballnotes(unittest.TestCase):
         #driver.find_element(By.ID,'com.caing.news:id/loading_layout_ad_close').click()
         # driver.find_element(By.XPATH, "//android.widget.RelativeLayout[@resource-id=\"com.caing.news:id/user_center_setting_top_arrows\"]/android.widget.ImageView[1]").click()
         # driver.find_element(By.ID, 'com.caing.news: id / tv_register').click()
-
-
-
 
 
     def tearDown(self):
