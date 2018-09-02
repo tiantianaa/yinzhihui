@@ -46,8 +46,6 @@ class Ballnotes(unittest.TestCase):
 
 
 
-
-
     def tearDown(self):
         # exitApp(self)
         driver = self.driver

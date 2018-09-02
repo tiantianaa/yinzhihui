@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2018-09-02 15:24:53</p>
-<p class='attribute'><strong>Duration:</strong> 0:01:08.318000</p>
-<p class='attribute'><strong>Status:</strong> Pass 1 Error 2</p>
+<p class='attribute'><strong>Start Time:</strong> 2018-09-02 16:32:05</p>
+<p class='attribute'><strong>Duration:</strong> 0:01:07.879000</p>
+<p class='attribute'><strong>Status:</strong> Pass 1</p>
 
 <p class='description'>测试环境:Window Server 2008 + Chrome</p>
 </div>
@@ -254,138 +254,12 @@ pt1.1:
     </td>
 </tr>
 
-<tr class='errorClass'>
-    <td>testa_Anewnote.Anewnote: 新建云笔记</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
-</tr>
-
-<tr id='ft2.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_newnote</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
-        error</a>
-
-    <div id='div_ft2.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft2.1: Traceback (most recent call last):
-  File "C:\Users\Administrator\PycharmProjects\untitled2\scripts\testa_Anewnote.py", line 22, in setUp
-    self.driver=webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\webdriver.py", line 36, in __init__
-    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 154, in __init__
-    self.start_session(desired_capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 243, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 4.4.2. The following are available: 192.168.56.101:5555 (4.4.4)
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\PycharmProjects\untitled2\scripts\testa_Anewnote.py", line 22, in setUp
-    self.driver=webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\webdriver.py", line 36, in __init__
-    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 154, in __init__
-    self.start_session(desired_capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 243, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 4.4.2. The following are available: 192.168.56.101:5555 (4.4.4)
-
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr class='errorClass'>
-    <td>testa_Bself.Ballnotes: 最新-全部切换</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c3',1)">Detail</a></td>
-</tr>
-
-<tr id='ft3.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_allnotes: 最新-全部函数</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.1')" >
-        error</a>
-
-    <div id='div_ft3.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft3.1: Traceback (most recent call last):
-  File "C:\Users\Administrator\PycharmProjects\untitled2\scripts\testa_Bself.py", line 23, in setUp
-    self.driver=webdriver.Remote("http://127.0.0.1:4723/wd/hub",desired_caps)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\webdriver.py", line 36, in __init__
-    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 154, in __init__
-    self.start_session(desired_capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 243, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 4.4.2. The following are available: 192.168.56.101:5555 (4.4.4)
-
-Traceback (most recent call last):
-  File "C:\Users\Administrator\PycharmProjects\untitled2\scripts\testa_Bself.py", line 23, in setUp
-    self.driver=webdriver.Remote("http://127.0.0.1:4723/wd/hub",desired_caps)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\webdriver.py", line 36, in __init__
-    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 154, in __init__
-    self.start_session(desired_capabilities, browser_profile)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 243, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 4.4.2. The following are available: 192.168.56.101:5555 (4.4.4)
-
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
 <tr id='total_row'>
     <td>Total</td>
-    <td>3</td>
+    <td>1</td>
     <td>1</td>
     <td>0</td>
-    <td>2</td>
+    <td>0</td>
     <td>&nbsp;</td>
 </tr>
 </table>
