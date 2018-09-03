@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from scripts.publica.exit_app import *
 
 class Ballnotes(unittest.TestCase):
-    '''最新-全部切换'''
+    '''最新登录滑屏'''
     def setUp(self):
         #1.手机信息
         desired_caps={
@@ -35,7 +35,9 @@ class Ballnotes(unittest.TestCase):
         time.sleep(5)
         driver.find_element_by_class_name('android.widget.ImageView').click()
 
-    def test_allnotes(self):
+
+    def test_alla(self):
+        '''最新登录滑屏AAAAA'''
         driver=self.driver
         time.sleep(15)
         driver.find_element(By.ID, 'com.caing.news:id/iv_myself').click()
@@ -44,6 +46,17 @@ class Ballnotes(unittest.TestCase):
         # driver.find_element(By.XPATH, "//android.widget.RelativeLayout[@resource-id=\"com.caing.news:id/user_center_setting_top_arrows\"]/android.widget.ImageView[1]").click()
         # driver.find_element(By.ID, 'com.caing.news: id / tv_register').click()
 
+    def test_allb(self):
+        '''最新登录滑屏BBBBB'''
+        driver = self.driver
+        time.sleep(15)
+        driver.find_element(By.ID, 'com.caing.news:id/iv_myself').click()
+
+    def test_allc(self):
+        '''最新登录滑屏CCCCC'''
+        driver = self.driver
+        time.sleep(15)
+        driver.find_element(By.ID, 'com.caing.news:id/iv_myself').click()
 
 
     def tearDown(self):
