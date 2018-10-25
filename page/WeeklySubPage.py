@@ -1,19 +1,32 @@
 import time
 from appium import webdriver
-from appium.webdriver.common.touch_action import TouchAction
 from selenium.webdriver.common.by import By
 import page.BasePage
+# from scripts.public.phoneLogin import *
+from appium.webdriver.common.touch_action import TouchAction
+
 
 class caixin_login(page.BasePage.Base):
     HomeView = (By.XPATH, "//android.widget.ImageView[@resource-id=\"com.caing.news:id/iv_guide_1\"]")
     start = (By.XPATH, "//android.widget.ImageView[@resource-id =\"com.caing.news:id/iv_guide_5\"]")
     close = (By.ID, "com.caing.news:id/iv_finished")
+
     myself = (By.ID, "com.caing.news:id/iv_myself")
     phoneButton = (By.ID, "com.caing.news:id/user_center_setting_top_phone")
 
     usernameSend = (By.ID, "com.caing.news:id/user_login_layout_phone")
     passwordSend = (By.ID, "com.caing.news:id/user_login_layout_password")
     loginButton = (By.CLASS_NAME, "android.widget.Button")
+
+    # 订阅周刊通
+    # newsButton = (By.ID, "com.caing.news:id/iv_summary")
+    #
+    # chooseArticle = (By.XPATH,"//android.widget.ListView[@resource-id=\"android:id/list\"]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]")
+    chooseCategory = (By.ID, "com.caing.news:id/cb_check")
+    nowSubscribe = (By.ID, "com.caing.news:id/tv_subscribe")
+    zfbpay = (By.XPATH,
+              "//android.support.v7.widget.RecyclerView[@resource-id=\"com.caing.news:id/pay_method_recyclerview\"]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]")
+    Pay = (By.ID, "com.caing.news:id/tv_pay")
 
     def click_HomeView(self):
         self.find(self.HomeView)
@@ -31,10 +44,26 @@ class caixin_login(page.BasePage.Base):
         self.findtext(self.passwordSend, text)
     def click_loginButton(self):
         self.findclick(self.loginButton)
+    def click_chooseCategory(self):
+        self.findclick(self.chooseCategory)
+    def click_nowSubscribe(self):
+        self.findclick(self.nowSubscribe)
+    def click_zfbpay(self):
+        self.findclick(self.zfbpay)
+    def click_Pay(self):
+        self.findclick(self.Pay)
+
+
+        # 订阅周刊通
+
+    # def click_newsButton(self):
+    #     self.findclick(self.newsButton)
+    # def click_chooseArticle(self):
+    #     self.findclick(self.chooseArticle)
 
     def login(self):
         driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", page.BasePage.Base.desired_caps)
-        dase_page=caixin_login(driver)
+        dase_page = caixin_login(driver)
         time.sleep(2)
         dase_page.click_HomeView()
         time.sleep(2)
@@ -80,22 +109,42 @@ class caixin_login(page.BasePage.Base):
         time.sleep(2)
         dase_page.click_loginButton()
 
+        # 订阅周刊通
+        driver.find_element(By.ID, 'com.caing.news:id/iv_summary').click()
+        driver.find_element(By.XPATH,
+                            '//android.widget.ListView[@resource-id=\"android:id/list\"]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]').click()
 
+        driver.find_element_by_class_name('android.widget.ImageView')
+        time.sleep(5)
+        for i in range(3):
+            print("第%d次滑屏" % i)
+            time.sleep(3)
+            driver.swipe(300, 350, 300, 20, 200)
+        # 点击订阅
+        driver.find_element(By.XPATH, "//android.view.View/android.view.View[6]/android.view.View[3]").click()
 
+        dase_page.click_chooseCategory()
+        dase_page.click_nowSubscribe()
+        dase_page.click_zfbpay()
+        dase_page.click_Pay()
+        time.sleep(3)
+        driver.swipe(80, 1280, 80, 1280, 1)
+        driver.swipe(500, 1400, 500, 1400, 1)
 
+        # driver.find_element(By.XPATH,
+        #                     "//android.widget.FrameLayout/android.widget.FrameLayout[3]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]")
+        time.sleep(3)
+        driver.swipe(500, 1900, 500, 1900, 1)
 
+        driver.swipe(540, 1700, 540, 1700, 1)
+        driver.swipe(540, 1880, 540, 1880, 1)
+        driver.swipe(540, 1600, 540, 1600, 1)
+        driver.swipe(540, 1700, 540, 1700, 1)
+        driver.swipe(540, 1880, 540, 1880, 1)
+        driver.swipe(540, 1600, 540, 1600, 1)
 
-
-
-
-
-
-
-
-
-
-
-
+        driver.swipe(600, 850, 600, 850, 1)
+        driver.find_element(By.ID, "com.tencent.mm:id/apj").click()
 
 
 
