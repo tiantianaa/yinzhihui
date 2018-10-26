@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2018-10-12 10:36:48</p>
-<p class='attribute'><strong>Duration:</strong> 0:03:49.071000</p>
-<p class='attribute'><strong>Status:</strong> Pass 1</p>
+<p class='attribute'><strong>Start Time:</strong> 2018-10-26 15:11:08</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:58.404000</p>
+<p class='attribute'><strong>Status:</strong> Error 1</p>
 
 <p class='description'>测试环境:appium Server</p>
 </div>
@@ -221,29 +221,90 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='passClass'>
-    <td>Test_caixinLogin.caixinLogin</td>
-    <td>1</td>
+<tr class='errorClass'>
+    <td>Test_login.Ballnotes</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
+    <td>1</td>
     <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
+    
+    
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_caixinLogin: 测试登录手机密码正常登录</div></td>
-    <td colspan='5' align='center'>pass</td>
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_alla</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
+
+    <div id='div_ft1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1: Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Insertthescreenshot\TestCase\Test_login.py", line 51, in test_alla
+    raise msg
+  File "C:\Users\Administrator\PycharmProjects\Insertthescreenshot\TestCase\Test_login.py", line 39, in test_alla
+    driver.find_element(By.ID, 'com.caing.news:id/iv_myself').click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\Insertthescreenshot\TestCase\Test_login.py", line 51, in test_alla
+    raise msg
+  File "C:\Users\Administrator\PycharmProjects\Insertthescreenshot\TestCase\Test_login.py", line 39, in test_alla
+    driver.find_element(By.ID, 'com.caing.news:id/iv_myself').click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
 <tr id='total_row'>
     <td>Total</td>
     <td>1</td>
+    <td>0</td>
+    <td>0</td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td>&nbsp;</td>
+    
+<tr id='total_row'>
+    <td>picture</td>
+    <td align='center'> 
 </tr>
 </table>
+
+    <img src="..\picture\image.png" height=200 width=200 border=0 /></a> 
 
 <div id='ending'>&nbsp;</div>
 

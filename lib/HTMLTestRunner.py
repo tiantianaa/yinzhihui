@@ -444,8 +444,14 @@ a.popup_link:hover {
     <td>%(fail)s</td>
     <td>%(error)s</td>
     <td>&nbsp;</td>
+    
+<tr id='total_row'>
+    <td>picture</td>
+    <td align='center'> 
 </tr>
 </table>
+
+    <img src="..\picture\image.png" height=200 width=200 border=0 /></a> 
 """ # variables: (test_list, count, Pass, fail, error)
 
     REPORT_CLASS_TMPL = r"""
@@ -457,6 +463,8 @@ a.popup_link:hover {
     <td>%(error)s</td>
     <td><a href="javascript:showClassDetail('%(cid)s',%(count)s)">Detail</a></td>
 </tr>
+    
+    
 """ # variables: (style, desc, count, Pass, fail, error, cid)
 
 
@@ -708,6 +716,8 @@ class HTMLTestRunner(Template_mixin):
         return heading
 
 
+
+
     def _generate_report(self, result):
         rows = []
         sortedResult = self.sortResult(result.result)
@@ -752,6 +762,7 @@ class HTMLTestRunner(Template_mixin):
 
 
     def _generate_report_test(self, rows, cid, tid, n, t, o, e):
+
         # e.g. 'pt1.1', 'ft1.1', etc
         has_output = bool(o or e)
         tid = (n == 0 and 'p' or 'f') + 't%s.%s' % (cid+1,tid+1)

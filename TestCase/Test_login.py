@@ -45,9 +45,9 @@ class Ballnotes(unittest.TestCase):
             driver.find_element(By.ID, 'com.caing.news:id/user_login_layout_login').click()
 
             actual = driver.find_element(By.ID, "com.caing.news:id/user_login_layout_phone_error").text
-            self.assertEqual(actual, u'请输入正确的手机号')
+            self.assertEqual(actual, u'请输入正确的手机')
         except Exception as msg:
-            driver.get_screenshot_as_file('picture\\error4.png')
+            driver.get_screenshot_as_file('picture\\image.png')
             raise msg
 
     def tearDown(self):
