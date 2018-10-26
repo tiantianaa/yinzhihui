@@ -451,7 +451,7 @@ a.popup_link:hover {
 </tr>
 </table>
 
-    <img src="..\picture\image.png" height=200 width=200 border=0 /></a> 
+    <img src="..\picture\image.png" height=960 width=540 border=0 /></a> 
 """ # variables: (test_list, count, Pass, fail, error)
 
     REPORT_CLASS_TMPL = r"""

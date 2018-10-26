@@ -29,6 +29,16 @@ class Ballnotes(unittest.TestCase):
         driver.find_element_by_class_name('android.widget.ImageView').click()
         time.sleep(5)
         driver.find_element_by_class_name('android.widget.ImageView').click()
+
+        # 获取屏幕的size
+        size = driver.get_window_size()
+        print(size)
+        # 获取屏幕宽度 width
+        width = size['width']
+        print(width)
+        # 获取屏幕高度 height
+        height = size['height']
+        print(height)
        # driver.find_element_by_xpath()
 
 
