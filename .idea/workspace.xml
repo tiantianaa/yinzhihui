@@ -21,11 +21,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test_login.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Test_login.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestCase/Test_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="50" column="41" lean-forward="true" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+            <state relative-caret-position="154">
+              <caret line="54" column="47" lean-forward="true" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -36,10 +36,22 @@
       <file leaf-file-name="HTMLTestRunner.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/HTMLTestRunner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="455" column="0" lean-forward="true" selection-start-line="455" selection-start-column="0" selection-end-line="455" selection-end-column="0" />
+            <state relative-caret-position="10032">
+              <caret line="461" column="0" lean-forward="false" selection-start-line="461" selection-start-column="0" selection-end-line="461" selection-end-column="0" />
               <folding>
                 <element signature="e#3215#3230#0" expanded="true" />
+                <marker date="1540539332121" expanded="true" signature="4324:11847" ph="..." />
+                <marker date="1540539332121" expanded="true" signature="11182:11847" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1540539332121" expanded="true" signature="21861:23349" ph="..." />
+                <marker date="1540539332121" expanded="true" signature="21861:23414" ph="..." />
+                <marker date="1540539332121" expanded="true" signature="22352:22554" ph="..." />
+                <marker date="1540539332121" expanded="true" signature="22365:22535" ph="..." />
+                <marker date="1540539332121" expanded="true" signature="22617:22819" ph="..." />
+                <marker date="1540539332121" expanded="true" signature="22630:22800" ph="..." />
+                <marker date="1540539332121" expanded="true" signature="23382:23414" ph="..." />
+                <marker date="1540539332121" expanded="true" signature="23417:23803" ph="..." />
+                <marker date="1540539332121" expanded="true" signature="23849:23969" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1540539332121" expanded="true" signature="24002:24205" ph="..." />
               </folding>
             </state>
           </provider>
@@ -55,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="run1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="165">
+              <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -77,27 +89,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/picture/image.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="image1.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/picture/image1.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="image2.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/picture/image2.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -112,6 +103,9 @@
       <find>showClassDetail</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -121,7 +115,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="461" />
+    <option name="x" value="194" />
     <option name="y" value="35" />
     <option name="width" value="1154" />
     <option name="height" value="701" />
@@ -142,43 +136,28 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Insertthescreenshot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Insertthescreenshot" type="462c0819:PsiDirectoryNode" />
+              <item name="yinzhihui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yinzhihui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Insertthescreenshot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Insertthescreenshot" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Insertthescreenshot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Insertthescreenshot" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Insertthescreenshot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Insertthescreenshot" type="462c0819:PsiDirectoryNode" />
-              <item name="picture" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Insertthescreenshot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Insertthescreenshot" type="462c0819:PsiDirectoryNode" />
+              <item name="yinzhihui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yinzhihui" type="462c0819:PsiDirectoryNode" />
               <item name="reports" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Insertthescreenshot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Insertthescreenshot" type="462c0819:PsiDirectoryNode" />
+              <item name="yinzhihui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yinzhihui" type="462c0819:PsiDirectoryNode" />
               <item name="TestCase" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="RecentsManager">
@@ -284,18 +263,19 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="461" y="35" width="1154" height="701" extended-state="0" />
+    <frame x="194" y="35" width="1154" height="701" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13796134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13796134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26013514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26013514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -324,6 +304,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestCase/Test_login.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/HTMLTestRunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9900">
+          <caret line="455" column="0" lean-forward="true" selection-start-line="455" selection-start-column="0" selection-end-line="455" selection-end-column="0" />
+          <folding>
+            <element signature="e#3215#3230#0" expanded="true" />
+            <marker date="1540539332121" expanded="true" signature="4324:11847" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="11182:11847" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1540539332121" expanded="true" signature="21861:23349" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="21861:23414" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="22352:22554" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="22365:22535" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="22617:22819" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="22630:22800" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="23382:23414" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="23417:23803" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="23849:23969" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1540539332121" expanded="true" signature="24002:24205" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reports/report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/Test_login.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1386">
           <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding>
@@ -338,6 +384,18 @@
           <caret line="500" column="19" lean-forward="true" selection-start-line="500" selection-start-column="19" selection-end-line="500" selection-end-column="19" />
           <folding>
             <element signature="e#3215#3230#0" expanded="true" />
+            <marker date="1540539332121" expanded="true" signature="4324:11847" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="11182:11847" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1540539332121" expanded="true" signature="21861:23349" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="21861:23414" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="22352:22554" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="22365:22535" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="22617:22819" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="22630:22800" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="23382:23414" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="23417:23803" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="23849:23969" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1540539332121" expanded="true" signature="24002:24205" ph="..." />
           </folding>
         </state>
       </provider>
@@ -350,11 +408,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/picture/image.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/picture/image.png" />
     <entry file="file://$PROJECT_DIR$/run1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -381,21 +435,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/picture/image2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/picture/image1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/picture/image.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/picture/image2.png" />
+    <entry file="file://$PROJECT_DIR$/picture/image1.png" />
+    <entry file="file://$PROJECT_DIR$/picture/image.png" />
     <entry file="file://$PROJECT_DIR$/reports/report.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -404,32 +446,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestCase/Test_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="50" column="41" lean-forward="true" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/HTMLTestRunner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="455" column="0" lean-forward="true" selection-start-line="455" selection-start-column="0" selection-end-line="455" selection-end-column="0" />
+        <state relative-caret-position="10032">
+          <caret line="461" column="0" lean-forward="false" selection-start-line="461" selection-start-column="0" selection-end-line="461" selection-end-column="0" />
           <folding>
             <element signature="e#3215#3230#0" expanded="true" />
+            <marker date="1540539332121" expanded="true" signature="4324:11847" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="11182:11847" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1540539332121" expanded="true" signature="21861:23349" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="21861:23414" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="22352:22554" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="22365:22535" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="22617:22819" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="22630:22800" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="23382:23414" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="23417:23803" ph="..." />
+            <marker date="1540539332121" expanded="true" signature="23849:23969" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1540539332121" expanded="true" signature="24002:24205" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        <state relative-caret-position="165">
+          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestCase/Test_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="54" column="47" lean-forward="true" selection-start-line="54" selection-start-column="47" selection-end-line="54" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
