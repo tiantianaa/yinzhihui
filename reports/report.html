@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2018-12-11 18:24:06</p>
-<p class='attribute'><strong>Duration:</strong> 1:23:15.757000</p>
-<p class='attribute'><strong>Status:</strong> Pass 25 Error 5</p>
+<p class='attribute'><strong>Start Time:</strong> 2018-12-12 12:37:49</p>
+<p class='attribute'><strong>Duration:</strong> 1:25:39.122000</p>
+<p class='attribute'><strong>Status:</strong> Pass 44 Error 7</p>
 
 <p class='description'>测试环境:appium Server</p>
 </div>
@@ -221,17 +221,211 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
+<tr class='errorClass'>
+    <td>Test_EmailLoginAbnor.PhLoginAbnor: 邮箱登录异常测试</td>
+    <td>10</td>
+    <td>9</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c1',10)">Detail</a></td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_emailaccountAbnor_1___________请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_emailaccountAbnor_2___123456____abc____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_emailaccountAbnor_3___abcd____12345____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_emailaccountAbnor_4___abc123456____abc12____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft1.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailaccountAbnor_5___________0____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.5')" >
+        error</a>
+
+    <div id='div_ft1.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.5: Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\untitled53\TestCase\Test_EmailLoginAbnor.py", line 42, in test_emailaccountAbnor
+    driver.find_element(By.ID, 'com.caing.news:id/ll_myself').click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_emailpasswordAbnor_1___________请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_emailpasswordAbnor_2___123456____abc____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_emailpasswordAbnor_3___abcd____12345____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.9' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_emailpasswordAbnor_4___abc123456____abc12____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.10' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_emailpasswordAbnor_5___________0____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
 <tr class='passClass'>
     <td>Test_ForgotPassword.forgotpwd: 忘记密码</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
+<tr id='pt2.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_forgotpwd: 测试忘记手机密码</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_LoginAbnor.PhLoginAbnor: 手机登录异常测试</td>
+    <td>8</td>
+    <td>7</td>
+    <td>0</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c3',8)">Detail</a></td>
+</tr>
+
+<tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_accountAbnor_1___________请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt3.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_accountAbnor_2___12345____123____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt3.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_accountAbnor_3___abc____abc____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt3.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_accountAbnor_4___abc123____abc12____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt3.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_passwordAbnor_1___________请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt3.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_passwordAbnor_2___12345____123____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt3.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_passwordAbnor_3___abc____abc____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft3.8' class='none'>
+    <td class='errorCase'><div class='testcase'>test_passwordAbnor_4___abc123____abc12____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.8')" >
+        error</a>
+
+    <div id='div_ft3.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.8: Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\untitled53\TestCase\Test_LoginAbnor.py", line 64, in test_passwordAbnor
+    driver.find_element(By.ID, 'com.caing.news:id/iv_myself').click()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='passClass'>
+    <td>Test_QuestionAnswer.QAnswer: 常见问题解答</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c4',1)">Detail</a></td>
+</tr>
+
+<tr id='pt4.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_QuestionAnswer: 测试常见问题解答</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
@@ -241,29 +435,34 @@ function showOutput(id, name) {
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c5',1)">Detail</a></td>
 </tr>
 
-<tr id='pt2.1' class='hiddenRow'>
+<tr id='pt5.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_Search: 测试搜索新闻</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr class='passClass'>
     <td>Test_article.articlePage: 文章页面</td>
-    <td>2</td>
-    <td>2</td>
+    <td>3</td>
+    <td>3</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c3',2)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c6',3)">Detail</a></td>
 </tr>
 
-<tr id='pt3.1' class='hiddenRow'>
+<tr id='pt6.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_background: 文章页面背景</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt3.2' class='hiddenRow'>
+<tr id='pt6.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_editorComments: 文章页面评论显示</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt6.3' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_pointPraise: 文章页面收藏</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -274,10 +473,10 @@ function showOutput(id, name) {
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c4',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c7',1)">Detail</a></td>
 </tr>
 
-<tr id='pt4.1' class='hiddenRow'>
+<tr id='pt7.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_caixinLogin: 测试登录手机密码正常登录</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -288,10 +487,10 @@ function showOutput(id, name) {
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c5',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c8',1)">Detail</a></td>
 </tr>
 
-<tr id='pt5.1' class='hiddenRow'>
+<tr id='pt8.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_caixinSubscribe: 财新通正常订阅</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -302,31 +501,29 @@ function showOutput(id, name) {
     <td>4</td>
     <td>0</td>
     <td>1</td>
-    <td><a href="javascript:showClassDetail('c6',5)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c9',5)">Detail</a></td>
 </tr>
 
-<tr id='ft6.1' class='none'>
+<tr id='ft9.1' class='none'>
     <td class='errorCase'><div class='testcase'>test_caixinAmountLess: 财新通订阅异常测试，账户金额不足</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft6.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft9.1')" >
         error</a>
 
-    <div id='div_ft6.1' class="popup_window">
+    <div id='div_ft9.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft6.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft9.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft6.1: Traceback (most recent call last):
+ft9.1: Traceback (most recent call last):
   File "C:\Users\Administrator\PycharmProjects\untitled53\TestCase\Test_caixinSubAbnor.py", line 20, in test_caixinAmountLess
     CaixinSubAbnorPage.caixinSubAbour.caixinSubAmountLess(self)
-  File "C:\Users\Administrator\PycharmProjects\untitled53\page\CaixinSubAbnorPage.py", line 355, in caixinSubAmountLess
-    driver.swipe(500, 1900, 500, 1900, 1)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\webdriver.py", line 241, in swipe
-    action.perform()
+  File "C:\Users\Administrator\PycharmProjects\untitled53\page\CaixinSubAbnorPage.py", line 295, in caixinSubAmountLess
+    action1.long_press(el).wait(10000).perform()
   File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\common\touch_action.py", line 94, in perform
     self._driver.execute(Command.TOUCH_ACTION, params)
   File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
@@ -337,7 +534,7 @@ ft6.1: Traceback (most recent call last):
     super(MobileErrorHandler, self).check_response(response)
   File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command.
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
 
 
 
@@ -348,44 +545,22 @@ selenium.common.exceptions.WebDriverException: Message: An unknown server-side e
     </td>
 </tr>
 
-<tr id='pt6.2' class='hiddenRow'>
+<tr id='pt9.2' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_caixinLoginWX: 财新通订阅异常测试，用户没有登录微信</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt6.3' class='hiddenRow'>
+<tr id='pt9.3' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_caixinLoginZFB: 财新通订阅异常测试，用户未登录支付宝</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt6.3')" >
-        pass</a>
-
-    <div id='div_pt6.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt6.3').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt6.3: 第0次滑屏
-第1次滑屏
-第2次滑屏
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt6.4' class='hiddenRow'>
+<tr id='pt9.4' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_caixnNoLogin: 财新通订阅异常测试，用户没有登录财新账号</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt6.5' class='hiddenRow'>
+<tr id='pt9.5' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_weeklyPasswordError: 财新通订阅异常测试，交易密码错误</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -396,10 +571,10 @@ pt6.3: 第0次滑屏
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c7',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c10',1)">Detail</a></td>
 </tr>
 
-<tr id='pt7.1' class='hiddenRow'>
+<tr id='pt10.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_dataSubscribe: 数据通正常订阅</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -410,30 +585,30 @@ pt6.3: 第0次滑屏
     <td>5</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c8',5)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c11',5)">Detail</a></td>
 </tr>
 
-<tr id='pt8.1' class='hiddenRow'>
+<tr id='pt11.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_dataAmountLess: 订阅异常测试，账户金额不足</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt8.2' class='hiddenRow'>
+<tr id='pt11.2' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_dataLoginWX: 数据通订阅异常测试，用户没有登录微信</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt8.3' class='hiddenRow'>
+<tr id='pt11.3' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_dataLoginZFB: 数据通订阅异常测试，用户未登录支付宝</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt8.4' class='hiddenRow'>
+<tr id='pt11.4' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_dataNoLogin: 数据通订阅异常测试，用户没有登录财新账号</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt8.5' class='hiddenRow'>
+<tr id='pt11.5' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_dataPasswordError: 数据通订阅异常测试，交易密码错误</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -444,11 +619,25 @@ pt6.3: 第0次滑屏
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c9',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c12',1)">Detail</a></td>
 </tr>
 
-<tr id='pt9.1' class='hiddenRow'>
+<tr id='pt12.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_groupRregister: 测试集团用户注册</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>Test_permission.MyPermission: 查看我的权限</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c13',1)">Detail</a></td>
+</tr>
+
+<tr id='pt13.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_Mypermission: 测试查看我的权限</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
@@ -458,101 +647,44 @@ pt6.3: 第0次滑屏
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c10',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c14',1)">Detail</a></td>
 </tr>
 
-<tr id='pt10.1' class='hiddenRow'>
+<tr id='pt14.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_phoneCaxinLogin: 测试登录手机密码正常登录</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt10.1')" >
-        pass</a>
-
-    <div id='div_pt10.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt10.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt10.1: ('15598843435',)
-('15598843435',)
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>Test_thirdLogin.thirdlogin: 第三方登录</td>
     <td>5</td>
-    <td>4</td>
+    <td>5</td>
     <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c11',5)">Detail</a></td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c15',5)">Detail</a></td>
 </tr>
 
-<tr id='pt11.1' class='hiddenRow'>
+<tr id='pt15.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_emailLogin: 邮箱登录</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt11.2' class='hiddenRow'>
+<tr id='pt15.2' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_huaweiLogin: 华为登录</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt11.3' class='hiddenRow'>
+<tr id='pt15.3' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_qqLogin: QQ登录</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='ft11.4' class='none'>
-    <td class='errorCase'><div class='testcase'>test_weiboLogin: 微博登录</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft11.4')" >
-        error</a>
-
-    <div id='div_ft11.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft11.4').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft11.4: Traceback (most recent call last):
-  File "C:\Users\Administrator\PycharmProjects\untitled53\TestCase\Test_thirdLogin.py", line 19, in test_weiboLogin
-    ThirdLoginPage.caixin_login.weibologin(self)
-  File "C:\Users\Administrator\PycharmProjects\untitled53\page\ThirdLoginPage.py", line 198, in weibologin
-    driver.find_element(By.XPATH, '//android.widget.TextView[@text=\"准生产环境\"]').click()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
-    'value': value})['value']
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
-    raise wde
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
-    super(MobileErrorHandler, self).check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
-
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+<tr id='pt15.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_weiboLogin: 微博登录</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt11.5' class='hiddenRow'>
+<tr id='pt15.5' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_wxLogin: 微信登录</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -563,10 +695,10 @@ selenium.common.exceptions.NoSuchElementException: Message: An element could not
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c12',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c16',1)">Detail</a></td>
 </tr>
 
-<tr id='pt12.1' class='hiddenRow'>
+<tr id='pt16.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_caixinLogin: 周刊通正常订阅</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -574,49 +706,81 @@ selenium.common.exceptions.NoSuchElementException: Message: An element could not
 <tr class='errorClass'>
     <td>Test_weeklySubAbnor.weeklysubAbnor: 周刊通订阅异常</td>
     <td>5</td>
-    <td>2</td>
+    <td>1</td>
     <td>0</td>
-    <td>3</td>
-    <td><a href="javascript:showClassDetail('c13',5)">Detail</a></td>
+    <td>4</td>
+    <td><a href="javascript:showClassDetail('c17',5)">Detail</a></td>
 </tr>
 
-<tr id='pt13.1' class='hiddenRow'>
+<tr id='pt17.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_weeklyAmountLess: 订阅异常测试，账户金额不足</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='ft13.2' class='none'>
+<tr id='ft17.2' class='none'>
     <td class='errorCase'><div class='testcase'>test_weeklyLoginWX: 周刊通订阅异常测试，用户没有登录微信</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft13.2')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft17.2')" >
         error</a>
 
-    <div id='div_ft13.2' class="popup_window">
+    <div id='div_ft17.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft13.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft17.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft13.2: Traceback (most recent call last):
+ft17.2: Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 1254, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1106, in request
+    self._send_request(method, url, body, headers)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1151, in _send_request
+    self.endheaders(body)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1102, in endheaders
+    self._send_output(message_body)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 934, in _send_output
+    self.send(msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 877, in send
+    self.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 849, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\socket.py", line 711, in create_connection
+    raise err
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\socket.py", line 702, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
   File "C:\Users\Administrator\PycharmProjects\untitled53\TestCase\Test_weeklySubAbnor.py", line 14, in test_weeklyLoginWX
     WeeklySubAbourPage.weeklySubscribe.weeklyLoginWX(self)
-  File "C:\Users\Administrator\PycharmProjects\untitled53\page\WeeklySubAbourPage.py", line 172, in weeklyLoginWX
-    driver.find_element(By.ID, 'com.caing.news:id/iv_summary').click()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
-    'value': value})['value']
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
-    raise wde
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
-    super(MobileErrorHandler, self).check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
-
+  File "C:\Users\Administrator\PycharmProjects\untitled53\page\WeeklySubAbourPage.py", line 128, in weeklyLoginWX
+    driver.swipe(972, 1000, 110, 1000, 200)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\webdriver.py", line 241, in swipe
+    action.perform()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\common\touch_action.py", line 94, in perform
+    self._driver.execute(Command.TOUCH_ACTION, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 310, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 466, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 528, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 466, in open
+    response = self._open(req, data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 484, in _open
+    '_open', req)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 444, in _call_chain
+    result = func(*args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 1282, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 1256, in do_open
+    raise URLError(err)
+urllib.error.URLError: &lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt;
 
 
         </pre>
@@ -626,43 +790,147 @@ selenium.common.exceptions.NoSuchElementException: Message: An element could not
     </td>
 </tr>
 
-<tr id='pt13.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_weeklyLoginZFB: 周刊通订阅异常测试，用户未登录支付宝</div></td>
-    <td colspan='5' align='center'>pass</td>
+<tr id='ft17.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_weeklyLoginZFB: 周刊通订阅异常测试，用户未登录支付宝</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft17.3')" >
+        error</a>
+
+    <div id='div_ft17.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft17.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft17.3: Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 1254, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1106, in request
+    self._send_request(method, url, body, headers)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1151, in _send_request
+    self.endheaders(body)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1102, in endheaders
+    self._send_output(message_body)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 934, in _send_output
+    self.send(msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 877, in send
+    self.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 849, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\socket.py", line 711, in create_connection
+    raise err
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\socket.py", line 702, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\untitled53\TestCase\Test_weeklySubAbnor.py", line 17, in test_weeklyLoginZFB
+    WeeklySubAbourPage.weeklySubscribe.weeklyLoginZFB(self)
+  File "C:\Users\Administrator\PycharmProjects\untitled53\page\WeeklySubAbourPage.py", line 198, in weeklyLoginZFB
+    driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", page.BasePage.Base.desired_caps)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\webdriver.py", line 36, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 154, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 243, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 310, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 466, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 528, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 466, in open
+    response = self._open(req, data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 484, in _open
+    '_open', req)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 444, in _call_chain
+    result = func(*args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 1282, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 1256, in do_open
+    raise URLError(err)
+urllib.error.URLError: &lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt;
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
-<tr id='ft13.4' class='none'>
+<tr id='ft17.4' class='none'>
     <td class='errorCase'><div class='testcase'>test_weeklyNoLogin: 周刊通订阅异常测试，用户没有登录财新账号</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft13.4')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft17.4')" >
         error</a>
 
-    <div id='div_ft13.4' class="popup_window">
+    <div id='div_ft17.4' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft13.4').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft17.4').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft13.4: Traceback (most recent call last):
+ft17.4: Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 1254, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1106, in request
+    self._send_request(method, url, body, headers)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1151, in _send_request
+    self.endheaders(body)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1102, in endheaders
+    self._send_output(message_body)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 934, in _send_output
+    self.send(msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 877, in send
+    self.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 849, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\socket.py", line 711, in create_connection
+    raise err
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\socket.py", line 702, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
   File "C:\Users\Administrator\PycharmProjects\untitled53\TestCase\Test_weeklySubAbnor.py", line 11, in test_weeklyNoLogin
     WeeklySubAbourPage.weeklySubscribe.weeklyNoLogin(self)
-  File "C:\Users\Administrator\PycharmProjects\untitled53\page\WeeklySubAbourPage.py", line 103, in weeklyNoLogin
-    driver.find_element(By.ID, 'com.caing.news:id/iv_summary').click()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
-    'value': value})['value']
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
-    raise wde
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
-    super(MobileErrorHandler, self).check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
-
+  File "C:\Users\Administrator\PycharmProjects\untitled53\page\WeeklySubAbourPage.py", line 65, in weeklyNoLogin
+    driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", page.BasePage.Base.desired_caps)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\webdriver.py", line 36, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 154, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 243, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 310, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 466, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 528, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 466, in open
+    response = self._open(req, data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 484, in _open
+    '_open', req)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 444, in _call_chain
+    result = func(*args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 1282, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 1256, in do_open
+    raise URLError(err)
+urllib.error.URLError: &lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt;
 
 
         </pre>
@@ -672,38 +940,72 @@ selenium.common.exceptions.NoSuchElementException: Message: An element could not
     </td>
 </tr>
 
-<tr id='ft13.5' class='none'>
+<tr id='ft17.5' class='none'>
     <td class='errorCase'><div class='testcase'>test_weeklyPasswordError: 周刊通订阅异常测试，交易密码错误</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft13.5')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft17.5')" >
         error</a>
 
-    <div id='div_ft13.5' class="popup_window">
+    <div id='div_ft17.5' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft13.5').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft17.5').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft13.5: Traceback (most recent call last):
+ft17.5: Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 1254, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1106, in request
+    self._send_request(method, url, body, headers)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1151, in _send_request
+    self.endheaders(body)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 1102, in endheaders
+    self._send_output(message_body)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 934, in _send_output
+    self.send(msg)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 877, in send
+    self.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\http\client.py", line 849, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\socket.py", line 711, in create_connection
+    raise err
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\socket.py", line 702, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
   File "C:\Users\Administrator\PycharmProjects\untitled53\TestCase\Test_weeklySubAbnor.py", line 23, in test_weeklyPasswordError
     WeeklySubAbourPage.weeklySubscribe.weeklyPasswordError(self)
-  File "C:\Users\Administrator\PycharmProjects\untitled53\page\WeeklySubAbourPage.py", line 414, in weeklyPasswordError
-    driver.find_element(By.ID, 'com.caing.news:id/iv_summary').click()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
-    'value': value})['value']
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
-    raise wde
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
-    super(MobileErrorHandler, self).check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
-
+  File "C:\Users\Administrator\PycharmProjects\untitled53\page\WeeklySubAbourPage.py", line 363, in weeklyPasswordError
+    driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", page.BasePage.Base.desired_caps)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\webdriver.py", line 36, in __init__
+    super(WebDriver, self).__init__(command_executor, desired_capabilities, browser_profile, proxy, keep_alive)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 154, in __init__
+    self.start_session(desired_capabilities, browser_profile)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 243, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 310, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 466, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 528, in _request
+    resp = opener.open(request, timeout=self._timeout)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 466, in open
+    response = self._open(req, data)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 484, in _open
+    '_open', req)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 444, in _call_chain
+    result = func(*args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 1282, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\urllib\request.py", line 1256, in do_open
+    raise URLError(err)
+urllib.error.URLError: &lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt;
 
 
         </pre>
@@ -715,10 +1017,10 @@ selenium.common.exceptions.NoSuchElementException: Message: An element could not
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>30</td>
-    <td>25</td>
+    <td>51</td>
+    <td>44</td>
     <td>0</td>
-    <td>5</td>
+    <td>7</td>
     <td>&nbsp;</td>
 </tr>
 </table>
