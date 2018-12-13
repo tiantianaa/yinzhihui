@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2018-12-12 16:37:50</p>
-<p class='attribute'><strong>Duration:</strong> 0:25:15.076000</p>
-<p class='attribute'><strong>Status:</strong> Pass 18 Error 2</p>
+<p class='attribute'><strong>Start Time:</strong> 2018-12-13 16:26:17</p>
+<p class='attribute'><strong>Duration:</strong> 1:37:35.737000</p>
+<p class='attribute'><strong>Status:</strong> Pass 51</p>
 
 <p class='description'>测试环境:appium Server</p>
 </div>
@@ -221,12 +221,12 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>Test_EmailLoginAbnor.PhLoginAbnor: 邮箱登录异常测试</td>
     <td>10</td>
-    <td>9</td>
+    <td>10</td>
     <td>0</td>
-    <td>1</td>
+    <td>0</td>
     <td><a href="javascript:showClassDetail('c1',10)">Detail</a></td>
 </tr>
 
@@ -260,45 +260,9 @@ function showOutput(id, name) {
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='ft1.7' class='none'>
-    <td class='errorCase'><div class='testcase'>test_emailpasswordAbnor_2___123456____abc____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.7')" >
-        error</a>
-
-    <div id='div_ft1.7' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.7').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft1.7: Traceback (most recent call last):
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\ddt.py", line 145, in wrapper
-    return func(self, *args, **kwargs)
-  File "C:\Users\Administrator\PycharmProjects\untitled9999\TestCase\Test_EmailLoginAbnor.py", line 61, in test_emailpasswordAbnor
-    driver.find_element(By.ID, 'com.caing.news:id/iv_myself').click()
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
-    'value': value})['value']
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
-    raise wde
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
-    super(MobileErrorHandler, self).check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
-
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+<tr id='pt1.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_emailpasswordAbnor_2___123456____abc____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr id='pt1.8' class='hiddenRow'>
@@ -317,50 +281,64 @@ selenium.common.exceptions.NoSuchElementException: Message: An element could not
 </tr>
 
 <tr class='passClass'>
+    <td>Test_ForgotPassword.forgotpwd: 忘记密码</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
+</tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_forgotpwd: 测试忘记手机密码</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
     <td>Test_LoginAbnor.PhLoginAbnor: 手机登录异常测试</td>
     <td>8</td>
     <td>8</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c2',8)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c3',8)">Detail</a></td>
 </tr>
 
-<tr id='pt2.1' class='hiddenRow'>
+<tr id='pt3.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_accountAbnor_1___________请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt2.2' class='hiddenRow'>
+<tr id='pt3.2' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_accountAbnor_2___12345____123____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt2.3' class='hiddenRow'>
+<tr id='pt3.3' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_accountAbnor_3___abc____abc____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt2.4' class='hiddenRow'>
+<tr id='pt3.4' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_accountAbnor_4___abc123____abc12____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt2.5' class='hiddenRow'>
+<tr id='pt3.5' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_passwordAbnor_1___________请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt2.6' class='hiddenRow'>
+<tr id='pt3.6' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_passwordAbnor_2___12345____123____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt2.7' class='hiddenRow'>
+<tr id='pt3.7' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_passwordAbnor_3___abc____abc____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr id='pt2.8' class='hiddenRow'>
+<tr id='pt3.8' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_passwordAbnor_4___abc123____abc12____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
@@ -371,72 +349,292 @@ selenium.common.exceptions.NoSuchElementException: Message: An element could not
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c3',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c4',1)">Detail</a></td>
 </tr>
 
-<tr id='pt3.1' class='hiddenRow'>
+<tr id='pt4.1' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_QuestionAnswer: 测试常见问题解答</div></td>
     <td colspan='5' align='center'>pass</td>
 </tr>
 
-<tr class='errorClass'>
-    <td>Test_permission.MyPermission: 查看我的权限</td>
+<tr class='passClass'>
+    <td>Test_SearchNews.Search: 文章搜索</td>
+    <td>1</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c4',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c5',1)">Detail</a></td>
 </tr>
 
-<tr id='ft4.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_Mypermission: 测试查看我的权限</div></td>
-    <td colspan='5' align='center'>
+<tr id='pt5.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_Search: 测试搜索新闻</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
 
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.1')" >
-        error</a>
+<tr class='passClass'>
+    <td>Test_article.articlePage: 文章页面</td>
+    <td>3</td>
+    <td>3</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c6',3)">Detail</a></td>
+</tr>
 
-    <div id='div_ft4.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft4.1: Traceback (most recent call last):
-  File "C:\Users\Administrator\PycharmProjects\untitled9999\TestCase\Test_permission.py", line 12, in test_Mypermission
-    MypermissionPage.Mypermission.permission(self)
-  File "C:\Users\Administrator\PycharmProjects\untitled9999\page\MypermissionPage.py", line 50, in permission
-    el = driver.find_element_by_id('com.caing.news:id/iv_tegong')
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 351, in find_element_by_id
-    return self.find_element(by=By.ID, value=id_)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 955, in find_element
-    'value': value})['value']
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 312, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
-    raise wde
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
-    super(MobileErrorHandler, self).check_response(response)
-  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python35\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 237, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+<tr id='pt6.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_background: 文章页面背景</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
 
+<tr id='pt6.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_editorComments: 文章页面评论显示</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
 
+<tr id='pt6.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_pointPraise: 文章页面收藏</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
 
-        </pre>
-    </div>
-    <!--css div popup end-->
+<tr class='passClass'>
+    <td>Test_caixinLogin.Login: 财新账号登录</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c7',1)">Detail</a></td>
+</tr>
 
-    </td>
+<tr id='pt7.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_caixinLogin: 测试登录手机密码正常登录</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>Test_caixinSub.caixinSub: 财新通正常订阅</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c8',1)">Detail</a></td>
+</tr>
+
+<tr id='pt8.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_caixinSubscribe: 财新通正常订阅</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>Test_caixinSubAbnor.caixinSubAb: 财新通订阅异常</td>
+    <td>5</td>
+    <td>5</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c9',5)">Detail</a></td>
+</tr>
+
+<tr id='pt9.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_caixinAmountLess: 财新通订阅异常测试，账户金额不足</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt9.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_caixinLoginWX: 财新通订阅异常测试，用户没有登录微信</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt9.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_caixinLoginZFB: 财新通订阅异常测试，用户未登录支付宝</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt9.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_caixnNoLogin: 财新通订阅异常测试，用户没有登录财新账号</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt9.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_weeklyPasswordError: 财新通订阅异常测试，交易密码错误</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>Test_dataSub.dataSub: 数据通正常订阅</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c10',1)">Detail</a></td>
+</tr>
+
+<tr id='pt10.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_dataSubscribe: 数据通正常订阅</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>Test_dataSubAbnor.dataSubAb: 数据通订阅异常</td>
+    <td>5</td>
+    <td>5</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c11',5)">Detail</a></td>
+</tr>
+
+<tr id='pt11.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_dataAmountLess: 订阅异常测试，账户金额不足</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt11.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_dataLoginWX: 数据通订阅异常测试，用户没有登录微信</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt11.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_dataLoginZFB: 数据通订阅异常测试，用户未登录支付宝</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt11.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_dataNoLogin: 数据通订阅异常测试，用户没有登录财新账号</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt11.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_dataPasswordError: 数据通订阅异常测试，交易密码错误</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>Test_groupRregistered.groupRregister: 大客户注册</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c12',1)">Detail</a></td>
+</tr>
+
+<tr id='pt12.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_groupRregister: 测试集团用户注册</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>Test_permission.MyPermission: 查看我的权限</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c13',1)">Detail</a></td>
+</tr>
+
+<tr id='pt13.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_Mypermission: 测试查看我的权限</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>Test_phoneCaixinLogin.phoneLogin: 手机号登录</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c14',1)">Detail</a></td>
+</tr>
+
+<tr id='pt14.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_phoneCaxinLogin: 测试登录手机密码正常登录</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>Test_thirdLogin.thirdlogin: 第三方登录</td>
+    <td>5</td>
+    <td>5</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c15',5)">Detail</a></td>
+</tr>
+
+<tr id='pt15.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_emailLogin: 邮箱登录</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt15.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_huaweiLogin: 华为登录</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt15.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_qqLogin: QQ登录</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt15.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_weiboLogin: 微博登录</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt15.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_wxLogin: 微信登录</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>Test_weeklySub.weeklysub: 周刊通正常订阅</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c16',1)">Detail</a></td>
+</tr>
+
+<tr id='pt16.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_caixinLogin: 周刊通正常订阅</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>Test_weeklySubAbnor.weeklysubAbnor: 周刊通订阅异常</td>
+    <td>5</td>
+    <td>5</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c17',5)">Detail</a></td>
+</tr>
+
+<tr id='pt17.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_weeklyAmountLess: 订阅异常测试，账户金额不足</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt17.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_weeklyLoginWX: 周刊通订阅异常测试，用户没有登录微信</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt17.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_weeklyLoginZFB: 周刊通订阅异常测试，用户未登录支付宝</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt17.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_weeklyNoLogin: 周刊通订阅异常测试，用户没有登录财新账号</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt17.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_weeklyPasswordError: 周刊通订阅异常测试，交易密码错误</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>20</td>
-    <td>18</td>
+    <td>51</td>
+    <td>51</td>
     <td>0</td>
-    <td>2</td>
+    <td>0</td>
     <td>&nbsp;</td>
 </tr>
 </table>
