@@ -1,0 +1,1698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c60; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c60; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript"><!--
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+/* obsoleted by detail in <div>
+function showOutput(id, name) {
+    var w = window.open("", //url
+                    name,
+                    "resizable,scrollbars,status,width=800,height=450");
+    d = w.document;
+    d.write("<pre>");
+    d.write(html_escape(output_list[id]));
+    d.write("\n");
+    d.write("<a href='javascript:window.close()'>close</a>\n");
+    d.write("</pre>\n");
+    d.close();
+}
+*/
+--></script>
+
+<div class='heading'>
+<h1>测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2019-02-19 09:33:35</p>
+<p class='attribute'><strong>Duration:</strong> 0:02:07.005000</p>
+<p class='attribute'><strong>Status:</strong> Failure 63</p>
+
+<p class='description'>测试环境:appium</p>
+</div>
+
+
+
+<p id='show_detail_line'>Show
+<a href='javascript:showCase(0)'>Summary</a>
+<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(2)'>All</a>
+</p>
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>Test Group/Test case</td>
+    <td>Count</td>
+    <td>Pass</td>
+    <td>Fail</td>
+    <td>Error</td>
+    <td>View</td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_CaixinSubNew.Sub: 用户中心立即订阅财新通</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_caixinSub: 测试立即订阅财新通</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+       fail</a>
+       
+    <div id='div_ft1.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_DataSubNewPage.Sub: 用户中心立即订阅数据通</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft2.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_dataSub: 测试立即订阅数据通</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
+       fail</a>
+       
+    <div id='div_ft2.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_EmailLoginAbnor.emailLoginAbnor: 邮箱登录异常测试</td>
+    <td>10</td>
+    <td>0</td>
+    <td>10</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c3',10)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft3.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailaccountAbnor_1___123456____abc____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.1')" >
+       fail</a>
+       
+    <div id='div_ft3.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailaccountAbnor_2___abcd____12345____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.2')" >
+       fail</a>
+       
+    <div id='div_ft3.2'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.2').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailaccountAbnor_3___dshf1234____abc12____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.3')" >
+       fail</a>
+       
+    <div id='div_ft3.3'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.3').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailaccountAbnor_4___________0____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.4')" >
+       fail</a>
+       
+    <div id='div_ft3.4'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.4').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailaccountAbnor_5___________________请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.5')" >
+       fail</a>
+       
+    <div id='div_ft3.5'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.5').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.6' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailpasswordAbnor_1___123456____abc____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.6')" >
+       fail</a>
+       
+    <div id='div_ft3.6'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.6').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.7' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailpasswordAbnor_2___abcd____12345____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.7')" >
+       fail</a>
+       
+    <div id='div_ft3.7'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.7').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.8' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailpasswordAbnor_3___dshf1234____abc12____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.8')" >
+       fail</a>
+       
+    <div id='div_ft3.8'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.8').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.9' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailpasswordAbnor_4___________0____请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.9')" >
+       fail</a>
+       
+    <div id='div_ft3.9'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.9').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.10' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailpasswordAbnor_5___________________请输入正确格式的邮箱____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.10')" >
+       fail</a>
+       
+    <div id='div_ft3.10'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.10').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_ForgotPassword.forgotpwd: 忘记密码</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c4',1)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft4.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_forgotpwd: 测试忘记手机密码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft4.1')" >
+       fail</a>
+       
+    <div id='div_ft4.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft4.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_LoginAbnor.PhLoginAbnor: 手机登录异常测试</td>
+    <td>8</td>
+    <td>0</td>
+    <td>8</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c5',8)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft5.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_accountAbnor_1___12345____123____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.1')" >
+       fail</a>
+       
+    <div id='div_ft5.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_accountAbnor_2___abc____abc____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.2')" >
+       fail</a>
+       
+    <div id='div_ft5.2'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.2').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_accountAbnor_3___abc123____abc12____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.3')" >
+       fail</a>
+       
+    <div id='div_ft5.3'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.3').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_accountAbnor_4___________________请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.4')" >
+       fail</a>
+       
+    <div id='div_ft5.4'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.4').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_passwordAbnor_1___12345____123____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.5')" >
+       fail</a>
+       
+    <div id='div_ft5.5'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.5').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.6' class='none'>
+    <td class='errorCase'><div class='testcase'>test_passwordAbnor_2___abc____abc____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.6')" >
+       fail</a>
+       
+    <div id='div_ft5.6'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.6').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.7' class='none'>
+    <td class='errorCase'><div class='testcase'>test_passwordAbnor_3___abc123____abc12____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.7')" >
+       fail</a>
+       
+    <div id='div_ft5.7'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.7').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft5.8' class='none'>
+    <td class='errorCase'><div class='testcase'>test_passwordAbnor_4___________________请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft5.8')" >
+       fail</a>
+       
+    <div id='div_ft5.8'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft5.8').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_QuestionAnswer.QAnswer: 常见问题解答</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c6',1)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft6.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_QuestionAnswer: 测试常见问题解答</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft6.1')" >
+       fail</a>
+       
+    <div id='div_ft6.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft6.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_RegPromptAbnor.phoneRegAbnor: 注册时异常测试</td>
+    <td>6</td>
+    <td>0</td>
+    <td>6</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c7',6)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft7.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailaccountAbnor_1___12345____123____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft7.1')" >
+       fail</a>
+       
+    <div id='div_ft7.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft7.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft7.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailaccountAbnor_2___abc____abc____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft7.2')" >
+       fail</a>
+       
+    <div id='div_ft7.2'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft7.2').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft7.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailaccountAbnor_3___abc123____abc12____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft7.3')" >
+       fail</a>
+       
+    <div id='div_ft7.3'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft7.3').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft7.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailpasswordAbnor_1___12345____123____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft7.4')" >
+       fail</a>
+       
+    <div id='div_ft7.4'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft7.4').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft7.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailpasswordAbnor_2___abc____abc____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft7.5')" >
+       fail</a>
+       
+    <div id='div_ft7.5'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft7.5').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft7.6' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailpasswordAbnor_3___abc123____abc12____请输入正确的手机号____请输入正确格式的密码__: list() -> new empty list</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft7.6')" >
+       fail</a>
+       
+    <div id='div_ft7.6'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft7.6').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_SearchNews.Search: 文章搜索</td>
+    <td>3</td>
+    <td>0</td>
+    <td>3</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c8',3)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft8.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_hot_search: 测试搜索热点新闻</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft8.1')" >
+       fail</a>
+       
+    <div id='div_ft8.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft8.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft8.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_input_search: 输入内容搜索新闻</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft8.2')" >
+       fail</a>
+       
+    <div id='div_ft8.2'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft8.2').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft8.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_words_search: 测试热词搜索新闻</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft8.3')" >
+       fail</a>
+       
+    <div id='div_ft8.3'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft8.3').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_ToViewAline.toViewAline: 一线文章的查看</td>
+    <td>2</td>
+    <td>0</td>
+    <td>2</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c9',2)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft9.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_login_aline: 已登录时有权限查看一线文章</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft9.1')" >
+       fail</a>
+       
+    <div id='div_ft9.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft9.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft9.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_no_login_aline: 未登录时无权限查看一线文章</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft9.2')" >
+       fail</a>
+       
+    <div id='div_ft9.2'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft9.2').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_ToViewSpecialArticle.toViewSpecial: 特供中推荐类别的查看</td>
+    <td>8</td>
+    <td>0</td>
+    <td>8</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c10',8)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft10.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_hotRecommend: 热门推荐查看</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft10.1')" >
+       fail</a>
+       
+    <div id='div_ft10.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft10.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft10.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_mallSubpage: 财新商城的推荐查看</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft10.2')" >
+       fail</a>
+       
+    <div id='div_ft10.2'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft10.2').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft10.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_nologin_permissions: 特供处未登录账号权限的查看</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft10.3')" >
+       fail</a>
+       
+    <div id='div_ft10.3'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft10.3').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft10.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_privateLesson: 财新私房课的推荐查看</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft10.4')" >
+       fail</a>
+       
+    <div id='div_ft10.4'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft10.4').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft10.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_see_permissions: 特供处已登录账号权限的查看</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft10.5')" >
+       fail</a>
+       
+    <div id='div_ft10.5'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft10.5').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft10.6' class='none'>
+    <td class='errorCase'><div class='testcase'>test_shareLesson: 分享课的推荐查看</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft10.6')" >
+       fail</a>
+       
+    <div id='div_ft10.6'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft10.6').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft10.7' class='none'>
+    <td class='errorCase'><div class='testcase'>test_special: 特辑的推荐查看</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft10.7')" >
+       fail</a>
+       
+    <div id='div_ft10.7'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft10.7').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft10.8' class='none'>
+    <td class='errorCase'><div class='testcase'>test_weekly: 财新周刊的推荐查看</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft10.8')" >
+       fail</a>
+       
+    <div id='div_ft10.8'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft10.8').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_article.articlePage: 文章页面</td>
+    <td>4</td>
+    <td>0</td>
+    <td>4</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c11',4)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft11.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_background: 文章页面背景</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft11.1')" >
+       fail</a>
+       
+    <div id='div_ft11.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft11.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft11.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_editorComments: 文章页面评论显示</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft11.2')" >
+       fail</a>
+       
+    <div id='div_ft11.2'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft11.2').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft11.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_fontSwitch: 文章页面字体</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft11.3')" >
+       fail</a>
+       
+    <div id='div_ft11.3'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft11.3').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft11.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_pointPraise: 文章页面收藏</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft11.4')" >
+       fail</a>
+       
+    <div id='div_ft11.4'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft11.4').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_caixinLogin.Login: 手机号登录</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c12',1)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft12.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_caixinLogin: 测试登录手机密码正常登录</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft12.1')" >
+       fail</a>
+       
+    <div id='div_ft12.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft12.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_caixinSub.caixinSub: 财新通文章页正常订阅</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c13',1)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft13.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_caixinSubscribe: 财新通正常订阅</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft13.1')" >
+       fail</a>
+       
+    <div id='div_ft13.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft13.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_caixinSubAbnor.caixinSubAb: 财新通文章页订阅异常</td>
+    <td>5</td>
+    <td>0</td>
+    <td>5</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c14',5)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft14.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_caixinAmountLess: 财新通订阅异常测试，账户金额不足</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft14.1')" >
+       fail</a>
+       
+    <div id='div_ft14.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft14.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft14.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_caixinLoginWX: 财新通订阅异常测试，用户没有登录微信</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft14.2')" >
+       fail</a>
+       
+    <div id='div_ft14.2'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft14.2').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft14.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_caixinLoginZFB: 财新通订阅异常测试，用户未登录支付宝</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft14.3')" >
+       fail</a>
+       
+    <div id='div_ft14.3'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft14.3').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft14.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_caixnNoLogin: 财新通订阅异常测试，用户没有登录财新账号</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft14.4')" >
+       fail</a>
+       
+    <div id='div_ft14.4'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft14.4').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft14.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_weeklyPasswordError: 财新通订阅异常测试，交易密码错误</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft14.5')" >
+       fail</a>
+       
+    <div id='div_ft14.5'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft14.5').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_dataSub.dataSub: 数据通文章页正常订阅</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c15',1)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft15.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_dataSubscribe: 数据通正常订阅</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft15.1')" >
+       fail</a>
+       
+    <div id='div_ft15.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft15.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_dataSubAbnor.dataSubAb: 数据通文章页订阅异常</td>
+    <td>5</td>
+    <td>0</td>
+    <td>5</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c16',5)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft16.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_dataAmountLess: 订阅异常测试，账户金额不足</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft16.1')" >
+       fail</a>
+       
+    <div id='div_ft16.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft16.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft16.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_dataLoginWX: 数据通订阅异常测试，用户没有登录微信</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft16.2')" >
+       fail</a>
+       
+    <div id='div_ft16.2'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft16.2').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft16.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_dataLoginZFB: 数据通订阅异常测试，用户未登录支付宝</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft16.3')" >
+       fail</a>
+       
+    <div id='div_ft16.3'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft16.3').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft16.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_dataNoLogin: 数据通订阅异常测试，用户没有登录财新账号</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft16.4')" >
+       fail</a>
+       
+    <div id='div_ft16.4'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft16.4').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft16.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_dataPasswordError: 数据通订阅异常测试，交易密码错误</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft16.5')" >
+       fail</a>
+       
+    <div id='div_ft16.5'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft16.5').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_groupRregistered.groupRregister: 大客户注册</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c17',1)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft17.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_groupRregister: 测试集团用户注册</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft17.1')" >
+       fail</a>
+       
+    <div id='div_ft17.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft17.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='errorClass'>
+    <td>Test_thirdLogin.thirdlogin: 第三方登录</td>
+    <td>4</td>
+    <td>0</td>
+    <td>4</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c18',4)">Detail</a></td>
+</tr>
+    
+    
+
+<tr id='ft18.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_emailLogin: 邮箱登录</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft18.1')" >
+       fail</a>
+       
+    <div id='div_ft18.1'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft18.1').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft18.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_qqLogin: QQ登录</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft18.2')" >
+       fail</a>
+       
+    <div id='div_ft18.2'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft18.2').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft18.3' class='none'>
+    <td class='errorCase'><div class='testcase'>test_weiboLogin: 微博登录</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft18.3')" >
+       fail</a>
+       
+    <div id='div_ft18.3'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft18.3').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft18.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_wxLogin: 微信登录</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft18.4')" >
+       fail</a>
+       
+    <div id='div_ft18.4'>
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft18.4').style.display = 'none' " >
+
+        </div>
+       
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='total_row'>
+    <td>Total</td>
+    <td>63</td>
+    <td>0</td>
+    <td>63</td>
+    <td>0</td>
+    <td>&nbsp;</td>
+    
+
+
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>
